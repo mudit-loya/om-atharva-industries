@@ -1,0 +1,66 @@
+/* ============================================================
+   ICON SYSTEM
+   Usage: <span data-icon="name" class="icon-img icon-{size} icon-{color}"></span>
+   Size classes  → base.css  (.icon-xs … .icon-2xl)
+   Color classes → below     (.icon-white, .icon-navy, …)
+   ============================================================ */
+
+/* ── Mask engine ─────────────────────────────────────────── */
+.icon-img {
+    display: inline-block;
+    background-color: currentColor;
+    -webkit-mask-image: var(--icon-src);
+    mask-image: var(--icon-src);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    flex-shrink: 0;
+}
+
+/* ── Icon registry ───────────────────────────────────────── */
+[data-icon="envelope"]              { --icon-src: url('../assets/icons/envelope.svg'); }
+[data-icon="envelope-sm"]           { --icon-src: url('../assets/icons/envelope-sm.svg'); }
+[data-icon="phone"]                 { --icon-src: url('../assets/icons/phone.svg'); }
+[data-icon="phone-sm"]              { --icon-src: url('../assets/icons/phone-sm.svg'); }
+[data-icon="map-pin"]               { --icon-src: url('../assets/icons/map-pin.svg'); }
+[data-icon="download"]              { --icon-src: url('../assets/icons/download.svg'); }
+[data-icon="eye"]                   { --icon-src: url('../assets/icons/eye.svg'); }
+[data-icon="bullseye"]              { --icon-src: url('../assets/icons/bullseye.svg'); }
+[data-icon="grid"]                  { --icon-src: url('../assets/icons/grid.svg'); }
+[data-icon="award"]                 { --icon-src: url('../assets/icons/award.svg'); }
+[data-icon="award-badge"]           { --icon-src: url('../assets/icons/award-badge.svg'); }
+[data-icon="award-green"]           { --icon-src: url('../assets/icons/award-green.svg'); }
+[data-icon="users"]                 { --icon-src: url('../assets/icons/users.svg'); }
+[data-icon="shield"]                { --icon-src: url('../assets/icons/shield.svg'); }
+[data-icon="shield-sm"]             { --icon-src: url('../assets/icons/shield-sm.svg'); }
+[data-icon="shield-lg"]             { --icon-src: url('../assets/icons/shield-lg.svg'); }
+[data-icon="shield-check"]          { --icon-src: url('../assets/icons/shield-check.svg'); }
+[data-icon="sustainability"]        { --icon-src: url('../assets/icons/sustainability.svg'); }
+[data-icon="layers"]                { --icon-src: url('../assets/icons/layers.svg'); }
+[data-icon="lightning"]             { --icon-src: url('../assets/icons/lightning.svg'); }
+[data-icon="sun"]                   { --icon-src: url('../assets/icons/sun.svg'); }
+[data-icon="pen-tool"]              { --icon-src: url('../assets/icons/pen-tool.svg'); }
+[data-icon="wrench"]                { --icon-src: url('../assets/icons/wrench.svg'); }
+[data-icon="film"]                  { --icon-src: url('../assets/icons/film.svg'); }
+[data-icon="medal"]                 { --icon-src: url('../assets/icons/medal.svg'); }
+[data-icon="check-circle"]          { --icon-src: url('../assets/icons/check-circle.svg'); }
+[data-icon="leaf"]                  { --icon-src: url('../assets/icons/leaf.svg'); }
+[data-icon="crosshair"]             { --icon-src: url('../assets/icons/crosshair.svg'); }
+[data-icon="book-open"]             { --icon-src: url('../assets/icons/book-open.svg'); }
+[data-icon="quotation"]             { --icon-src: url('../assets/icons/quotation.svg'); }
+[data-icon="arrow-right"]           { --icon-src: url('../assets/icons/Vector.svg'); }
+[data-icon="linkedin"]              { --icon-src: url('../assets/icons/linkedin.svg'); }
+
+/* ── Color utilities ─────────────────────────────────────── */
+.icon-white  { color: #ffffff; }
+.icon-navy   { color: var(--color-navy); }
+.icon-orange { color: var(--primary-orange); }
+.icon-blue   { color: var(--color-icon-blue); }
+.icon-green  { color: var(--color-icon-green); }
+.icon-green-600 { color: var(--color-green-600); }
+.icon-grey   { color: var(--color-icon-grey); }
+.icon-muted        { color: var(--color-muted); }
+.icon-navy-medium  { color: var(--color-navy-medium); }

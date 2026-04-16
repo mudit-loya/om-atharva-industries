@@ -1,0 +1,176 @@
+#capabilities {
+    background-color: var(--bg-light);
+    margin: 5rem 7.5vw 2rem;
+    border-radius: 0.5rem;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+#capabilities .container {
+    padding: 0 2vw;
+}
+
+.capabilities-header { margin-bottom: 2.5rem; }
+
+.capabilities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+.capabilities-grid .cap-card {
+    flex: 1 1 calc(33.333% - 2rem);
+}
+.cap-card {
+    background: var(--color-white);
+    border: 0.72px solid var(--color-border-faint);
+    box-shadow: 0 0.25rem 0.375rem -0.25rem var(--color-shadow-soft), 0 0.625rem 0.9375rem -0.1875rem var(--color-shadow-soft);
+    border-radius: 0.75rem;
+    padding: 1.875rem;
+    transition: transform 0.3s ease;
+}
+.cap-card:hover { transform: translateY(-0.3125rem); }
+.cap-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: var(--color-navy-muted);
+    color: var(--color-navy);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.cap-card h4 {
+    font-family: var(--font-display);
+    font-weight: var(--weight-bold);
+    font-size: var(--text-lg);
+    line-height: 1.75rem;
+    letter-spacing: 0;
+    color: var(--color-navy);
+    margin-bottom: 0.5rem;
+}
+
+.cap-highlight {
+    display: block;
+    font-family: var(--font-body);
+    font-weight: var(--weight-regular);
+    font-size: var(--text-sm);
+    line-height: var(--leading-sm);
+    letter-spacing: 0;
+    color: var(--primary-orange);
+    margin-bottom: 1rem;
+}
+
+.cap-card p {
+    font-family: var(--font-body);
+    font-weight: var(--weight-regular);
+    font-size: var(--text-sm);
+    line-height: 1.4219rem;
+    letter-spacing: 0;
+    color: var(--color-muted);
+}
+
+.capabilities-bottom-grid {
+    display: flex;
+    gap: 1.875rem;
+    height: 12.5rem;
+}
+.capabilities-bottom-grid .cap-image-wrapper,
+.capabilities-bottom-grid .cap-feature-box {
+    flex: 0 0 calc((100% - 1.875rem) / 2);
+    min-width: 0;
+}
+
+.cap-image-wrapper {
+    box-shadow: 0 1.5625rem 3.125rem -0.75rem var(--color-shadow-dark);
+    border-radius: 1rem;
+    overflow: hidden;
+    height: inherit;
+}
+.cap-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.cap-feature-box {
+    height: inherit;
+    background: linear-gradient(90deg, var(--color-navy) 0%, var(--color-navy-90) 100%);
+    border-radius: 1rem;
+    padding: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.cap-feature-icon { color: var(--primary-orange); margin-bottom: 1.25rem; }
+.cap-feature-number {
+    font-family: var(--font-body);
+    font-weight: var(--weight-regular);
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    letter-spacing: 0;
+    color: var(--color-white);
+    margin-bottom: 0.5rem;
+}
+.cap-feature-label {
+    font-family: var(--font-body);
+    font-weight: var(--weight-regular);
+    font-size: var(--text-base);
+    line-height: var(--leading-base);
+    letter-spacing: 0;
+    color: var(--color-border-light);
+}
+
+.cta-banner {
+    padding: 3.75rem 0;
+    background-color: var(--color-white);
+}
+.cta-box {
+    background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-90) 100%);
+    border-radius: 1rem;
+    padding: 3.75rem 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+.cta-box h2 {
+    font-family: var(--font-display);
+    font-weight: var(--weight-bold);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+.cta-box p {
+    font-family: var(--font-body);
+    font-weight: var(--weight-regular);
+    font-size: var(--text-xl);
+    line-height: 1.75rem;
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--color-border-light);
+    margin-bottom: 1.875rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cta-box .btn-orange {
+    font-family: var(--font-body);
+    font-weight: var(--weight-medium);
+    font-size: var(--text-base);
+    line-height: var(--leading-base);
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--color-white);
+    padding: 0.75rem 1.875rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.25rem;
+}

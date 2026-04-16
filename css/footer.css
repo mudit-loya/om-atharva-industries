@@ -1,0 +1,198 @@
+.footer {
+    background: var(--color-navy);
+    color: var(--color-white);
+    padding: 4rem 0 0;
+}
+
+.footer-main {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.footer-services-group {
+    display: flex;
+    flex: 1;
+    gap: 2.25rem;
+}
+
+.footer-nav-cols {
+    display: flex;
+    gap: 6rem;
+    align-items: flex-start;
+}
+
+.footer-brand {
+    flex: 0 0 auto;
+    width: 30vw;
+    margin-right: 0;
+}
+.footer-logo-wrap {
+    width: 3.25rem;
+    height: 3.25rem;
+    margin-bottom: 1rem;
+}
+.footer-logo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.footer-company-name {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: var(--weight-regular);
+    line-height: 1.25rem;
+    color: var(--color-white);
+    margin-bottom: 0.25rem;
+}
+.footer-tagline {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: var(--weight-regular);
+    line-height: 1rem;
+    color: var(--color-text-muted-1);
+    margin-bottom: 1rem;
+}
+.footer-desc {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: var(--weight-regular);
+    line-height: 1.625rem;
+    color: var(--color-text-muted-2);
+    margin-bottom: 1.5rem;
+}
+
+.footer-contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: var(--weight-regular);
+    line-height: 1.25rem;
+    color: var(--color-text-muted-2);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-contact-item:hover {
+    color: var(--color-white);
+}
+.footer-contact-item svg {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+    opacity: 0.7;
+}
+
+.footer-nav-col {
+    flex: 0 0 auto;
+}
+
+.footer-nav-col h4 {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: var(--weight-bold);
+    line-height: 1.75rem;
+    color: var(--color-white);
+    margin-bottom: 1.25rem;
+}
+.footer-nav-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.footer-nav-col ul li a {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: var(--weight-regular);
+    line-height: 1.25rem;
+    color: var(--color-text-muted-2);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.2s;
+}
+.footer-nav-col ul li a:hover {
+    color: var(--color-white);
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid var(--color-white-10);
+    margin: 0 0 2rem;
+}
+
+.footer-certs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.footer-cert-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: var(--weight-regular);
+    line-height: 1.25rem;
+    color: var(--color-text-muted-1);
+}
+.cert-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.cert-dot-green { background: var(--color-green); }
+.cert-dot-blue { background: var(--color-blue-accent); }
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 5rem;
+    gap: 1.25rem;
+}
+.footer-copyright {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: var(--weight-regular);
+    line-height: 1.25rem;
+    color: var(--color-text-muted-1);
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.625rem;
+}
+.footer-social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background: var(--color-white-10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+.footer-social-icon:hover {
+    background: var(--primary-orange);
+    border-color: var(--primary-orange);
+    color: var(--color-white);
+}
+
+.footer-logo {
+    margin-bottom: 1.5rem;
+}
