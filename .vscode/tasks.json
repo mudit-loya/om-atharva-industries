@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Git init and push master",
+			"type": "shell",
+			"command": "set -e && cd /home/mudit-loya/Documents/Projects/om-atharva-industries && (git init -b master || git init) && git branch -M master && if git remote get-url origin >/dev/null 2>&1; then git remote set-url origin git@github.com:mudit-loya/om-atharva-industries.git; else git remote add origin git@github.com:mudit-loya/om-atharva-industries.git; fi && find . -type f \\( -name '.DS_Store' -o -name 'Thumbs.db' \\) -delete && git add . && if git diff --cached --quiet; then echo 'NO_CHANGES_TO_COMMIT'; else git commit -m \"Initial commit\"; fi && git push -u origin master",
+			"isBackground": false
+		}
+	]
+}
