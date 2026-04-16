@@ -25,8 +25,8 @@
 }
 .navbar {
     background-color: var(--color-white);
-    padding: 1rem 0;
-    box-shadow: 0 0.125rem 0.625rem var(--color-shadow-faint);
+    padding: .25rem 0;
+    box-shadow: 0 0.5rem 1rem -0.5rem var(--color-shadow-dark);
 }
 .nav-content {
     display: flex;
